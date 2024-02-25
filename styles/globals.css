@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    background: #04152d;
+}
+.css-1j95noh .MuiDrawer-paper{
+      background-color: #04152d;
+     box-shadow: 0px 4px 4px #000;
+} 
+.css-1g7gwys .MuiDrawer-paper{
+    background-color: #04152d;
+     box-shadow: 0px 4px 4px #000;
+}
+.css-k008qs{
+    background-color: #04152d;
+}
+.Navbar{
+      background-color: #04152d;
+      box-shadow: 0px 4px 4px #000;
+}
+.MuiDrawer-paper {
+    background-color: #04152d;
+    padding-left: 20px;
+    box-shadow: 0px 4px 4px #000;
+}
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+    background-color: #04152d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px -2px 4px #000;
+    z-index: 2;
+    color: #ffff;
+}
+.customfont{
+    font-family: 'Kanit';
+}
+nav {
+    background-color: #04152d;
+    padding: 1rem .25rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    font-family: 'Kanit';
+    z-index: 2
+}
+
+nav .logo {
+    text-align: center;
+    width: 100%
+}
+
+nav .logo p {
+    font-size: 1.8rem;
+    background: -webkit-linear-gradient(45deg,#21daa2,#005aff);
+  
+    -webkit-text-fill-color: transparent
+}
+
+nav .linksContainer {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    transition: all .3s ease-in-out
+}
+
+nav .linksContainer a {
+    font-size: 1.2rem;
+    padding: .25rem .75rem;
+    color: #fff;
+    border-left: 3px solid transparent;
+    display: flex;
+    margin-bottom: 1.75rem;
+    color: #00f7ff;
+}
+
+nav .linksContainer a:last-child {
+    margin-top: auto
+}
+
+nav .linksContainer a .link__icon {
+    fill: #d50c71;
+    font-size: 1.4rem
+}
+
+nav .linksContainer a .link__title {
+    padding-left: .75rem;
+    font-size: 17px;
+
+}
+
+nav .linksContainer a:hover {
+    color:#d50c71;
+}
+
+nav .linksContainer a.active {
+    fill: #d50c71;
+    transform: scale(1.05);
+    color: #d50c71;
+    
+}
+
+nav .linksContainer a.active .link__icon {
+    color: #d50c71;
+}
+.customNav{
+    color: #ffff;
+}
+@media screen and (max-width: 768px) {
+    .customimage{
+        width: 200px;
+        height: 200px;
+    }
+.customCircleout{
+    width: 36px;
+    height: 36px;
+}
+.clece{
+    width: 32px;
+    height: 32px;
+}
+
+.customtex{
+    width: 200px;
+
+}
+
+
+    }
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin-top: 20px;
+        flex-direction:row;
+        padding: 0
+    }
+
+
+    nav .logo {
+        display: none
+    }
+
+    nav .linksContainer {
+        font-size: 1.4rem;
+        flex-direction: row;
+        margin-top: 0;
+        align-items: center
+    }
+
+    nav .linksContainer a {
+        border: none;
+        margin-bottom: 0;
+        margin: 20px;
+        align-items: center;
+        color: #00f7ff;
+        
+    }
+    .customimage{
+        width: 150px;
+    }
+    .customtex{
+        width: 150px;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 999;
+    border-radius: 50%;
+    box-shadow: 3px 3px 6px rgba(0,0,0,.7);
+    display: grid;
+    place-items: center
+}
+
+
+    /* CircleRating */
+  .clece{
+    margin-top:2px ;
+    margin-left: 2px;
+  }
+  .clecedetali 
+  {
+    margin-top:2px ;
+    margin-left: 2px;
+  }
+  .CircularProgressbar-text {
+    font-weight: 700;
+   
+}
+
+
+  /* CircleRating */
+
+  .videoPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9
+}
+
+.opacityLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3.5px);
+    transition: opacity .1s
+}
+
+
+
+/* detailsBanner */
+.detailsBanner {
+    width: 100%;
+    background-color: var(--black);
+    padding-top: 10px;
+    margin-bottom: 50px;
+    font-family: 'Kanit';
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .detailsBanner {
+        margin-bottom:0;
+        padding-top: 120px;
+        min-height: 700px
+    }
+}
+
+.backdrop-img {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    overflow: hidden
+}
+
+.lazy-load-image-background {
+    width: 100%;
+    height: 100%
+}
+
+.lazy-load-image-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+.opacity-layer {
+    width: 100%;
+    height: 20px;
+    /* background: linear-gradient(180deg,rgba(4,21,45,0) 0%,#04152d 79.17%); */
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        gap:50px;
+        flex-direction: row
+    }
+}
+
+.left {
+    flex-shrink: 0
+}
+
+.posterImg {
+    width: 100%;
+    display: block;
+    border-radius: 12px
+}
+
+@media only screen and (min-width: 768px) {
+   .posterImg {
+        max-width:350px
+    }
+}
+
+.right {
+    color: #fff;
+}
+
+.title {
+    font-size: 28px;
+    line-height: 40px
+}
+
+@media only screen and (min-width: 768px) {
+.title {
+        font-size:34px;
+        line-height: 44px
+    }
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: .5
+}
+
+@media only screen and (min-width: 768px) {
+    .subtitle {
+        font-size:20px;
+        line-height: 28px
+    }
+}
+
+.genres {
+    margin-bottom: 25px;
+    flex-flow: row wrap
+}
+
+.overview {
+    margin-bottom: 25px
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 10px
+}
+
+.description {
+    line-height: 24px
+}
+
+@media only screen and (min-width: 768px) {
+ .description {
+        padding-right:100px
+    }
+}
+
+.circleRating {
+    max-width: 70px;
+    background-color: var(--black2)
+}
+
+@media only screen and (min-width: 768px) {
+   .circleRating {
+        max-width:90px
+    }
+}
+
+.CircularProgressbar-text {
+    fill: #fff
+}
+
+
+@media only screen and (min-width: 768px) {
+    .playbtn svg {
+        width:80px
+    }
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px
+}
+
+.info {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    padding: 15px 0;
+    display: flex
+}
+.infocategory {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+   padding-bottom: 10px;
+}
+
+.infoItem {
+    margin-right: 10px;
+    display: flex;
+    flex-flow: row wrap
+}
+
+.text {
+    font-weight: 600;
+    margin-right: 10px;
+    opacity: .5;
+    line-height: 24px
+}
+
+.bold {
+    font-weight: 600;
+    opacity: 1
+}
+
+.detailsBannerSkeleton {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 25px
+}
+
+@media only screen and (min-width: 768px) {
+   .detailsBannerSkeleton {
+        gap:50px;
+        flex-direction: row
+    }
+}
+
+.contentWrapper {
+    display: flex;
+    gap: 50px
+}
+
+.left {
+    flex-shrink: 0;
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    aspect-ratio: 1/1.5
+}
+
+@media only screen and (min-width: 768px) {
+     .left {
+        max-width:350px
+    }
+}
+
+.right {
+    width: 100%
+}
+
+.row {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 50px
+}
+
+.row:nth-child(2) {
+    width: 75%;
+    margin-bottom: 50px
+}
+
+.row:nth-child(5) {
+    width: 50%;
+    margin-bottom: 50px
+}
+
+.Recommended{
+    font-family: 'Kanit';
+}
+.setdetailhead{
+       position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg,rgba(0,0,0,.5) 10%,transparent);
+    /* ของต้นฉบับ  background: linear-gradient(180deg,rgba(0,0,0,.5) 10%,transparent); */
+    top: 0;
+    left: 0;
+}
+
+.movies{
+    display: none;
+}
